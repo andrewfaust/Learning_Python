@@ -13,9 +13,11 @@ all_cars = pd.read_csv('/home/Andrew/Документы/Python_code/auto-mpg-qui
 all_cars = all_cars.sort_values('weight')
 print(all_cars)
 
-plt.plot('weight', 'hp', data=all_cars, ls='-', lw='1.5', c='purple', marker='o', label='Ломаная с кругом')
+plt.plot('weight', 'hp', data=all_cars, ls='-', lw='1.5', c='purple', marker='o', label='Линия')
 plt.title('Зависимость мощности автомобилей от массы')
-plt.xticks(np.arange(1500, 5000, step=500))
+plt.xlim(1500, 4500)
+plt.ylim(40, 250)
+#plt.xticks(np.arange(1500, 5000, step=500))
 #plt.xticks([1800, 3000, 4500], ['Легковесный','Среднивесный','Тяжоловесный'])
 plt.xlabel('Масса (кг)') #Подпись по оси X
 plt.ylabel('Мощность (л/с)') #Подпись по оси Y
