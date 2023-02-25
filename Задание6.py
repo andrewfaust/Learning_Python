@@ -9,8 +9,14 @@ numbers = pd.Series(list)
 Mean = numbers.mean()    #Среднее значение
 Median = numbers.median()   #Медиана
 Mode = numbers.mode()[0]   # index 1 gives the next mode (ie, 2)  Мода значение
-print(Mean, Median, Mode, sep = '\n') # sep = '\n' вывод по вертикали
-print(max(list)-min(list)) #Размах
+#print(Mean, Median, Mode, sep = '\n') # sep = '\n' вывод по вертикали
+#print(max(list)-min(list)) #Размах
+
+print(round(np.log(121), 2))
+print(round(np.log(4589), 2))
+print(round(np.log(112), 2))
+print(round(np.log(345), 2))
+
 
 
 #Осталось найти дисперсию 6.61 и стандартное отклонение 2.57
@@ -22,7 +28,7 @@ print(max(list)-min(list)) #Размах
 
 #list_avg = np.average(list) #Среднее значение
 #list_mediana = np.median(list) #Медиана
-#print(round(list_avg, 2))
+#print(round(list_avg, 2)) #round округлить
 #print(list_mediana)
 
 
